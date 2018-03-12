@@ -1,0 +1,839 @@
+
+/* ____________________________________________ START OF MOBILE MEDIA QUERY __________________________________*/
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+.cent_head
+{
+margin-top: 10%;
+}
+
+.intro
+{
+width: 95%;
+margin-left: 2%;
+font-size: 3em;
+text-align: center;
+}
+
+#signup_1
+{
+padding-bottom: 10%;
+}
+
+.signup_form
+{
+width: 85%;
+border: 1px solid #979797;
+margin: 0 0 3% 4%;
+padding: 3%;
+padding-bottom: 0;
+}
+
+.input_space
+{
+margin-bottom: 10%;
+}
+
+.blue_head label
+{
+font-size: 1.5em;
+color: #01B4FF;
+font-weight: lighter;
+}
+
+.blue_head
+{
+margin-bottom: 3%;
+font-size: 4em;
+color: #01B4FF;
+font-weight: lighter;
+}
+
+.input_field
+{
+width: 95%;
+line-height: 2em;
+font-family: 'Roboto',sans-serif;
+font-size: 3em;
+color: #999999;
+border: 1px solid #979797;
+border-radius: 10px;
+padding-left: 5%;
+}
+
+#howlong_field, #gender_field
+{
+width: 100%;
+}
+
+#howlong_field option, #gender_field option
+{
+font-size: .35em;
+color: #999999;
+font-family: 'Roboto', sans-serif;
+}
+
+#photo_space
+{
+display: flex;
+width: 100%;
+align-items: center;
+justify-content: space-between;
+}
+
+#profPhoto_label
+{
+margin: 0;
+flex-basis: 70%;
+}
+
+#photo_btn
+{
+flex-basis: 30%;
+width: 25%;
+/*margin: 0;*/
+margin-left: 3%;
+padding: 3% 0 3% 25%;
+font-family: 'Roboto', sans-serif;
+font-size: 3em;
+text-transform: uppercase;
+color: #fff;
+background-color: #01B4FF;
+border-radius: 15px;
+box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);
+background-image: url(../img/camera.png);
+background-size: 20%;
+background-repeat: no-repeat;
+background-position: 20%;
+}
+
+#intro_field
+{
+height: 7em;
+}
+
+#save_draft, #proceed, #create_btn
+{
+margin:0;
+width: 100%;
+}
+
+#save_draft
+{
+margin-bottom: 10%;
+width: 100%;
+background-color: #fff;
+color: #01B4FF;
+border: 4px solid #01B4FF;
+}
+
+.account_confirm
+{
+margin: 3%;
+margin-top: 10%;
+border: 2px solid #979797;
+}
+
+#profsetup_intro
+{
+padding: 3% 0;
+}
+
+#credits_left
+{
+color: #01B4FF;
+font-size: 4em;
+font-family: 'RobotoSlab', sans-serif;
+}
+
+#free_credits
+{
+
+background-color: #FFA800;
+color: #fff;
+margin: 0;
+margin-bottom: 10%;
+padding: 5% 0;
+line-height: 1.5em;
+width: 100%
+}
+
+#addcredits_btn, #cancrequest_btn
+{
+margin: 10% 5%;
+width: 90%;
+background-color: #fff;
+color: #01B4FF;
+border: 4px solid #01B4FF;
+}
+
+#complete_btn
+{
+margin: 5% 5%;
+width: 90%;
+}
+
+.circular_container
+{
+margin: 5% 4%;
+width: 900px;
+height: 900px;
+border: 4px solid #01B4FF;
+border-radius: 900px;
+}
+
+.circular_head
+{
+margin: 10% 25%;
+text-align: center;
+width: 50%;
+color: #01B4FF;
+font-size: 4em;
+font-family: 'RobotoSlab', sans-serif;
+}
+
+#wait_time
+{
+margin-top: 0;
+margin-bottom: 0;
+}
+
+.chat_request
+{
+width: 70%;
+margin: 10% 15%;
+position: relative;
+background-image: url(../img/linker.png);
+background-size: 80%;
+background-position: top center;
+background-repeat: no-repeat;
+}
+
+.icon_space
+{
+display: inline-flex;
+flex-direction: column;
+justify-content: space-around;
+}
+
+.linker
+{
+display: inline-block;
+width: 35%;
+}
+
+.round_icon
+{
+display: inline-block;
+width: 150px;
+height: 150px;
+background-color: #D8D8D8;
+border: 2px solid #979797;
+border-radius: 150px;
+}
+
+#pname_icon_space
+{
+position: absolute;
+right: 0;
+}
+
+#you_round_icon
+{
+background-image: url(../img/student.jpg);
+background-size: 200%;
+background-position: 50% 0%;
+background-repeat: no-repeat;
+}
+
+#pname_round_icon
+{
+background-image: url(../img/john.jpg);
+background-size: 200%;
+background-position: 70% 20%;
+background-repeat: no-repeat;
+/*margin-left: 17%;*/
+}
+
+.icon_caption
+{
+width: 100%;
+text-align: center;
+font-size: 2.5em;
+font-family: 'Roboto', sans-serif;
+}
+
+#success_container
+{
+border-color: #19C832;
+}
+
+#success_icon
+{
+margin-top: 15%;
+margin-left: 40%;
+width: 30%;
+height: 200px;
+background-image: url(../img/success_icon.png);
+background-repeat: no-repeat;
+}
+
+#circ_head_green
+{
+margin-top: 5%;
+color: #19C832;
+}
+
+#chatEnded_head
+{
+margin-bottom: 2%;
+}
+
+#hope_msg
+{
+width: 60%;
+margin-left: 20%;
+margin-top: 2%;
+}
+
+#plsProvide_msg
+{
+margin-top: 3%;
+padding: 0;
+}
+
+#teach_name
+{
+padding: 0;
+font-size: 4em;
+font-weight: bold;
+}
+
+.stars_space
+{
+margin-left: 18%;
+margin-top: 7%;
+position: relative;
+width: 620px;
+padding: 0;
+}
+
+.grey_star
+{
+display: inline-block;
+width: 120px;
+height: 120px;
+background-image: url(../img/grey_star.png);
+background-size: 100%;
+background-repeat: no-repeat;
+}
+
+/*THE FOLLOWING CODE IS USED TO SHOW THE RATING STARS IN INVERTED ORDER THAN THEIR POSITION IN HTML*/
+/* THIS IS USED TO MOCKUP A RATING SYSTEM (CANNOT CHANGE BACKGROUND FOR ELEMENTS THAT COME BEFORE IN HTML)*/
+#grey_star_5
+{
+position: absolute;
+right: 0;
+}
+
+#grey_star_4
+{
+position: absolute;
+right: 125px;
+}
+
+#grey_star_3
+{
+position: absolute;
+right: 250px;
+}
+
+#grey_star_2
+{
+position: absolute;
+right: 375px;
+}
+/* END OF STARS-INVERTING CODE*/
+
+/*THE FOLLOWING CODE LIGHTS THE STARS IN THE RATING SYSTEM*/
+#grey_star_1:hover
+{
+background-image: url(../img/rating_star.png);
+background-size: 120px 110px;
+background-repeat: no-repeat;
+}
+
+#grey_star_2:hover
+{
+background-image: url(../img/rating_star.png);
+background-size: 120px 110px;
+background-repeat: no-repeat;
+}
+
+#grey_star_2:hover ~ #grey_star_1
+{
+background-image: url(../img/rating_star.png);
+background-size: 120px 110px;
+background-repeat: no-repeat;
+}
+
+#grey_star_3:hover
+{
+background-image: url(../img/rating_star.png);
+background-size: 120px 110px;
+background-repeat: no-repeat;
+}
+
+#grey_star_3:hover ~ #grey_star_1
+{
+background-image: url(../img/rating_star.png);
+background-size: 120px 110px;
+background-repeat: no-repeat;
+}
+
+#grey_star_3:hover ~ #grey_star_2
+{
+background-image: url(../img/rating_star.png);
+background-size: 120px 110px;
+background-repeat: no-repeat;
+}
+
+#grey_star_4:hover
+{
+background-image: url(../img/rating_star.png);
+background-size: 120px 110px;
+background-repeat: no-repeat;
+}
+
+#grey_star_4:hover ~ #grey_star_1
+{
+background-image: url(../img/rating_star.png);
+background-size: 120px 110px;
+background-repeat: no-repeat;
+}
+
+#grey_star_4:hover ~ #grey_star_2
+{
+background-image: url(../img/rating_star.png);
+background-size: 120px 110px;
+background-repeat: no-repeat;
+}
+
+#grey_star_4:hover ~ #grey_star_3
+{
+background-image: url(../img/rating_star.png);
+background-size: 120px 110px;
+background-repeat: no-repeat;
+}
+
+#grey_star_5:hover
+{
+background-image: url(../img/rating_star.png);
+background-size: 120px 110px;
+background-repeat: no-repeat;
+}
+
+#grey_star_5:hover ~ #grey_star_1
+{
+background-image: url(../img/rating_star.png);
+background-size: 120px 110px;
+background-repeat: no-repeat;
+}
+
+#grey_star_5:hover ~ #grey_star_2
+{
+background-image: url(../img/rating_star.png);
+background-size: 120px 110px;
+background-repeat: no-repeat;
+}
+
+#grey_star_5:hover ~ #grey_star_3
+{
+background-image: url(../img/rating_star.png);
+background-size: 120px 110px;
+background-repeat: no-repeat;
+}
+
+#grey_star_5:hover ~ #grey_star_4
+{
+background-image: url(../img/rating_star.png);
+background-size: 120px 110px;
+background-repeat: no-repeat;
+}
+
+/*END OF CODE FOR LIGHTING STARS*/
+
+#fback_field
+{
+margin: 7%;
+width: 80%;
+height: 7em;
+border: 4px solid #CCCCCC;
+border-radius: 20px;
+}
+
+#submit_fb
+{
+width: 90%;
+margin: 10% 5%;
+}
+
+} /*END OF MOBILE MEDIA QUERY*/
+
+
+/* ____________________________________________ START OF DESKTOP MEDIA QUERY __________________________________*/
+
+@media only screen  and (min-device-width : 481px) {
+
+.signup_form
+{
+width: 80%;
+border: 1px solid #979797;
+margin: 0 0 3% 8%;
+padding: 3%;
+}
+
+#profsetup_intro
+{
+margin-bottom: 5%;
+}
+
+.blue_head
+{
+width: 50%;
+color: #01B4FF;
+font-size: 2vmax;
+font-weight: lighter;
+margin-bottom: 3%;
+}
+
+.input_space
+{
+margin-left: 32%;
+margin-bottom: 5%;
+}
+
+.input_space label
+{
+color: #01B4FF;
+font-size: 2vw;
+/*letter-spacing: .3vw;*/
+}
+
+.input_field
+{
+width: 50%;
+font-size: 1.5vw;
+padding: 1%;
+border: 1px solid #CCCCCC;
+border-radius: 5px;
+}
+
+#gender_field, #howlong_field
+{
+width: 52%;
+color: #999999;
+}
+
+#gender_field option, #howlong_field option
+{
+font-family: 'Roboto', sans-serif;
+color: #999999;
+}
+
+#photo_space
+{
+width: 34%;
+display: flex;
+align-items: center;
+}
+
+#profPhoto_label
+{
+margin: 0;
+flex-grow: 1;
+}
+
+#photo_btn
+{
+margin: 0;
+flex-grow: 1;
+margin: 5% 0;
+padding: 3% 5% 3% 20%;
+font-family: 'Roboto', sans-serif;
+font-size: 1.5vmax;
+text-transform: uppercase;
+color: #fff;
+background-color: #01B4FF;
+border-radius: 5px;
+box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);
+background-image: url(../img/camera.png);
+background-size: 20%;
+background-repeat: no-repeat;
+background-position: 30%;
+}
+
+#intro_field
+{
+height: 7em;
+}
+
+#buttons_space
+{
+width: 25%
+margin: 0;
+}
+
+/*.signup_form a div
+{
+width: 35%;
+padding: 1% 0;
+margin: 0 0 5% 32.25%;
+}*/
+
+.start_btn_2
+{
+/*width: 35%;
+padding: 1% 0;
+margin: 0 0 2% 32.25%;*/
+}
+
+#save_draft
+{
+margin: 0 !important;
+width: 52%;
+background-color: #fff;
+color: #01B4FF;
+border: 1px solid #01B4FF;
+margin-bottom: 10%;
+}
+
+#proceed
+{
+margin: 0;
+margin-top: 5%;
+width: 44.5%;
+}
+
+
+#signed_in
+{
+display: inline-flex;
+align-items: center;
+}
+
+#signedIn_img
+{
+width: 70px;
+height: 70px;
+border-radius: 70px;
+border: 2px solid #01B4FF;
+background-image: url(../img/student.jpg);
+background-size: 200%;
+background-position: 50% 10%;
+background-repeat: no-repeat;
+}
+
+#signedIn_name
+{
+display: flex;
+align-items: center;
+padding-left: 5%;
+color: #01B4FF;
+}
+
+#dwn_arrow
+{
+
+font-size: 1vmax;
+color: #01B4FF;
+}
+
+.account_confirm
+{
+width: 85%;
+margin-left: 7.5%;
+padding: 0;
+border: 1px solid #979797;
+}
+
+#free_credits
+{
+width: 96%;
+margin: 0;
+margin-bottom: 5%;
+padding: 2%;
+color: #fff;
+background-color: #FFA800;
+}
+
+.intro
+{
+width: 100%;
+text-align: center;
+margin: 2% 0;
+}
+
+#credits_left
+{
+color: #01B4FF;
+font-size: 2vmax;
+margin: 3% 0;
+}
+
+#addcredits_btn
+{
+width: 30%;
+margin: 2% 0 5% 35%;
+border: 2px solid #01B4FF;
+background-color: #fff;
+color: #01B4FF;
+font-weight: bold;
+}
+
+#complete_btn
+{
+width: 26%;
+margin: 4% 0 1% 37%;
+}
+
+/*{
+width: 22%;
+margin: 0 0 5% 39% !important;
+}*/
+
+.circular_container
+{
+margin: auto;
+margin-top: 3%;
+margin-bottom: 5%;
+width: 500px;
+height: 500px;
+border: 4px solid #01B4FF;
+border-radius: 500px;
+}
+
+.circular_head
+{
+margin: 10% 25%;
+text-align: center;
+width: 50%;
+color: #01B4FF;
+font-size: 2em;
+font-family: 'RobotoSlab', sans-serif;
+}
+
+#wait_time
+{
+margin-top: 10%;
+margin-bottom: 10%;
+}
+
+.circular_container .intro, #ifnot
+{
+font-size: 1.5em;
+line-height: 2em;
+}
+
+#ifnot
+{
+margin: 5% 0 !important;
+}
+
+.chat_request
+{
+width: 400px;
+margin: auto;
+margin-top: 5%;
+position: relative;
+background-image: url(../img/linker.png);
+background-size: 80%;
+background-position: top center;
+background-repeat: no-repeat;
+}
+
+.icon_space
+{
+display: inline-flex;
+flex-direction: column;
+justify-content: space-around;
+}
+
+.linker
+{
+display: inline-block;
+width: 35%;
+}
+
+.round_icon
+{
+display: inline-block;
+width: 100px;
+height: 100px;
+background-color: #D8D8D8;
+border: 2px solid #979797;
+border-radius: 100px;
+}
+
+#pname_icon_space
+{
+position: absolute;
+right: 0;
+}
+
+#you_round_icon
+{
+background-image: url(../img/student.jpg);
+background-size: 200%;
+background-position: 50% 0%;
+background-repeat: no-repeat;
+}
+
+#pname_round_icon
+{
+background-image: url(../img/john.jpg);
+background-size: 200%;
+background-position: 70% 20%;
+background-repeat: no-repeat;
+/*margin-left: 17%;*/
+}
+
+.icon_caption
+{
+width: 100%;
+text-align: center;
+font-size: 2vmax;
+font-family: 'Roboto', sans-serif;
+}
+
+#cancrequest_btn
+{
+width: 200px;
+margin: auto;
+font-size: 1em;
+}
+
+#success_container
+{
+border-color: #19C832;
+}
+
+#success_icon
+{
+width: 105px;
+height: 84px;
+margin: auto;
+margin-top: 100px;
+background-image: url(../img/success_icon.png);
+background-size: 100%;
+background-repeat: no-repeat;
+background-position: 50%;
+}
+
+#circ_head_green
+{
+color: #19C832;
+}
+
+} /*END OF DESKTOP MEDIA QUERY*/

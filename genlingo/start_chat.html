@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Genlingo - Sign Up</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/styles_mob.css">
+    <link rel="stylesheet" type="text/css" href="css/styles_desk.css">
+    <link rel="stylesheet" type="text/css" href="css/sign_up.css">
+    <link rel="stylesheet" type="text/css" href="css/sign_up_first.css">
+</head>
+
+<body>
+
+    <header>
+        
+        <div class="header_spacer">
+
+            <nav>   
+
+                <!-- CHECKBOX CONTROL TO TOGGLE MENU VISIBILITY -->
+                <input id="menu_toggle" type="checkbox" name="menu_toggle">
+
+                <!-- CREATES A HAMBURGER-STYLE MENU BUTTON AS A LABEL FOR THE CHECKBOX CONTROL -->
+                <!-- <label for="menu_toggle" id="hamburger"></label> COMMENTED OUT TO PREVENT UNWANTED INTERACTION--> 
+
+                <!-- NAVIGATION BAR UL -->
+                <ul id="nav_menu">
+
+                    <li id="menu_header">Menu</li>
+
+                    <li class="logo_space"><a href="index.html"><img src="img/logo_large.png"></a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="how_it_works.html">How it works</a></li>
+                    <li><a href="find_a_teacher.html">Find a teacher</a></li>
+                    <li>About</li>
+                    <li id="signup_btn">Sign up / in</li>
+
+                </ul>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+    <main>
+
+        <section class="chat_request">
+            <div class="icon_space" id="you_icon_space">
+                <div class="round_icon" id="you_round_icon">
+                
+                </div>
+                <div class="icon_caption" id="you_icon_caption">
+                    You
+                </div>
+            </div>
+
+            <div class="linker"></div>
+
+            <div class="icon_space" id="pname_icon_space">
+                <div class="round_icon"  id="pname_round_icon">
+                
+                </div>
+                <div class="icon_caption" id="pname_icon_caption">
+                    John
+                </div>
+            </div>
+        </section>
+
+        <section class="circular_container">
+            <p class="circular_head" id="circ_head1">Chat request sent to John.</p>
+            <p class="intro" id="pls_allow">Please allow at least</p>
+            <p class="circular_head" id="wait_time">5</p>
+            <p class="intro" id="mins_response">more minutes for a response</p>
+        </section>
+
+        <!-- <button class="start_btn_2" id="cancrequest_btn">Cancel request</button> -->
+        <br>
+        <p class="intro" id="ifnot">If John does not respond, you will be redirected back to ‘Find a teacher’</p>
+        <br>
+        <br>
+
+    </main>
+
+    <footer>
+        
+        <div class="footer_top">
+
+            <div class="sec_footlinks">
+                <p>Contact Us</p>
+                <p>Become a teacher</p>
+                <p>FAQ</p>
+                <p>Terms and Conditions</p>
+            </div>
+
+            <div class="textsize_ctrls">
+                <div id="chng_txt_size">Change text size</div>
+                <div class="textsize_btns">
+                    <button class="size_btn" id="dec_btn">-</button>
+                        <p>
+                            <span id="small_A">A</span>
+                            <span id="large_A">A</span>
+                        </p>
+                    <button class="size_btn" id="inc_btn">+</button>
+                </div>
+            </div>
+
+        </div>
+
+        <img src="img/devices.png" alt="Desktops, tablets, smartphones">
+        <p class="cent_foot_cont">Enjoy using Genlingo on the device of your choice.</p>
+        <p class="cent_foot_cont">Copyright Humanics &copy; 2017</p>
+
+    </footer>
+
+    <script type="text/javascript" src="scripts/success_redirect.js" ></script>
+
+</body>
+
+</html>

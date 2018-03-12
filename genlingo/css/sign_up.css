@@ -1,0 +1,74 @@
+
+/* ____________________________________________ START OF MOBILE MEDIA QUERY __________________________________*/
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+.cent_head
+{
+width: 100%;
+margin: 10% 0 0 0;
+text-align: center;
+}
+
+.intro
+{
+width: 100%;
+text-align: center;
+margin: 0; 
+padding: 0;
+}
+
+a
+{
+font-family: 'Roboto', sans-serif;
+text-decoration: none;
+color: #01B4FF;
+}
+
+.start_btn_2
+{
+width: 50%;
+margin-top: 5%;
+margin-left: 25%;
+}
+
+.sub_par
+{
+margin: 10% 0;
+}
+
+} /*END OF MOBILE MEDIA QUERY*/
+
+
+
+/* ____________________________________________ START OF DESKTOP MEDIA QUERY __________________________________*/
+
+@media only screen  and (min-device-width : 481px) {
+
+main a
+{
+font-family: 'Roboto', sans-serif;
+text-decoration: none;
+color: #01B4FF;
+}
+
+.intro
+{
+margin-top: 1%;
+margin-bottom: 1%;
+}
+
+.start_btn_2
+{
+width: 20%;
+margin-top: 0%;
+margin-bottom: 10%;
+margin-left: 38%;
+}
+
+.sub_par
+{
+margin-bottom: 5%;
+}
+
+}/*END OF DESKTOP MEDIA QUERY*/

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Genlingo - Feedback page</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/styles_mob.css">
+    <link rel="stylesheet" type="text/css" href="css/styles_desk.css">
+    <link rel="stylesheet" type="text/css" href="css/sign_up.css">
+    <link rel="stylesheet" type="text/css" href="css/sign_up_first.css">
+</head>
+
+<body>
+
+    <header>
+        
+        <div class="header_spacer">
+        
+            <nav>   
+
+                <!-- CHECKBOX CONTROL TO TOGGLE MENU VISIBILITY -->
+                <input id="menu_toggle" type="checkbox" name="menu_toggle">
+
+                <!-- CREATES A HAMBURGER-STYLE MENU BUTTON AS A LABEL FOR THE CHECKBOX CONTROL -->
+                <!--<label for="menu_toggle" id="hamburger"></label> MENU ICON DISABLED IN THIS PAGE-->
+
+                <!-- NAVIGATION BAR UL -->
+                <ul id="nav_menu">
+
+                    <li id="menu_header">Menu</li>
+
+                    <li class="logo_space"><a href="index.html"><img src="img/logo_large.png"></a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="how_it_works.html">How it works</a></li>
+                    <li><a href="find_a_teacher.html">Find a teacher</a></li>
+                    <li>About</li>
+                    <li id="signup_btn">Sign up / in</li>
+
+                </ul>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+    <main>
+
+        <section class="chat_request">
+
+            <div class="icon_space" id="you_icon_space">
+                <div class="round_icon" id="you_round_icon">
+                    
+                </div>
+                <div class="icon_caption" id="you_icon_caption">
+                    You
+                </div>
+                
+            </div>
+            <div class="linker">
+                
+            </div>
+            <div class="icon_space" id="pname_icon_space">
+                <div class="round_icon"  id="pname_round_icon">
+                    
+                </div>
+                <div class="icon_caption" id="pname_icon_caption">
+                    John
+                </div>
+            </div>
+            
+        </section>
+
+        <section id="endchat_msg">
+            <h1 class="circular_head" id="chatEnded_head">Chat ended!</h1>
+            <p class="intro" id="hope_msg">We hope you found that enjoyable and useful.</p>
+        </section>
+
+        <section class="endChat_rating">
+
+            <p class="intro" id="plsProvide_msg">Please provide a rating and a review of</p>
+            <p class="intro" id="teach_name">John:</p>
+            <div class="stars_space">
+                <div onclick="" class="grey_star" id="grey_star_5"></div> <!--ADDING onClick="" ALLOWS FOR :hover USE ON iPhone-->
+                <div onclick="" class="grey_star" id="grey_star_4"></div>
+                <div onclick="" class="grey_star" id="grey_star_3"></div>
+                <div onclick="" class="grey_star" id="grey_star_2"></div>
+                <div onclick="" class="grey_star" id="grey_star_1"></div>
+            </div>
+
+            <input type="textarea" class="input_field" id="fback_field" name="feedback" placeholder="Please insert a brief review">
+
+            <p class="intro" id="plsProvide_msg">This helps us keep making Genlingo better and better!</p>
+
+            <a href="index.html"><input type="button" name="submit_fb" class="start_btn_2" id="submit_fb" value="Submit and return to home"></a>
+
+        </section>
+
+
+
+    </main>
+
+    <footer>
+        
+        <div class="footer_top">
+
+            <div class="sec_footlinks">
+                <p>Contact Us</p>
+                <p>Become a teacher</p>
+                <p>FAQ</p>
+                <p>Terms and Conditions</p>
+            </div>
+
+            <div class="textsize_ctrls">
+                <div id="chng_txt_size">Change text size</div>
+                <div class="textsize_btns">
+                    <button class="size_btn" id="dec_btn">-</button>
+                        <p>
+                            <span id="small_A">A</span>
+                            <span id="large_A">A</span>
+                        </p>
+                    <button class="size_btn" id="inc_btn">+</button>
+                </div>
+            </div>
+
+        </div>
+
+        <img src="img/devices.png" alt="Desktops, tablets, smartphones">
+        <p class="cent_foot_cont">Enjoy using Genlingo on the device of your choice.</p>
+        <p class="cent_foot_cont">Copyright Humanics &copy; 2017</p>
+    </footer>
+
+</body>
+
+</html>

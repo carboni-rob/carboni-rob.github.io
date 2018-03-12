@@ -1,0 +1,680 @@
+main a
+{
+text-decoration: none;
+}
+
+/*------------------------------------------------------------------------------------------------------------*/
+
+/* START OF DESKTOP MEDIA QUERY */
+
+@media only screen  and (min-device-width : 481px)
+{
+
+#back_btn /* STYLES FOR TOP LEFT "BACK BUTTON" */
+{
+background-color: #FFFFFF;
+border: 1px solid #CCCCCC;
+border-radius: 5px;
+margin: 4%;
+margin-left: 8%;
+text-align: center;
+color: #595959;
+display: block;
+padding: .5em;
+}
+
+#back_btn a/* STYLES FOR TOP LEFT "BACK BUTTON" */
+{
+font-family: 'Roboto', sans-serif;
+font-size: 1em;
+}
+
+#personname
+{
+margin-left: 8%;
+font-size: 3vmax;
+}
+
+/* START OF STYLING FOR INDIVIDUAL PROFILE GRID */
+.profile
+{
+margin: 0 0 4% 8%;
+position: relative;
+}
+
+.photo_description
+{
+display: flex;
+flex-wrap: wrap;
+}
+
+/* START OF STYLES FOR THE FIRST (L) BLOCK */
+
+.photo_space
+{
+display: inline-block;
+width: 55%;
+min-width: 195px;
+margin-left: 3%
+background-color: #D8D8D8;
+box-shadow: 0 0 0 1px #979797;
+background-image: url(../img/john.jpg);
+background-repeat: no-repeat;
+background-position: center;
+background-size: 110%;
+}
+
+#play_icon
+{
+width: 10%;
+height: 15%;
+margin: 29% 45%;
+}
+
+#lg_signup_btn_desk
+{
+width: 53%;
+min-width: 195px;
+text-transform: uppercase;
+font-family: 'Roboto', sans-serif;
+font-size: 1.2vmax;
+/*font-weight: bold;*/
+color: #fff;
+text-align: center;
+margin: 3% 0;
+padding: 1%;
+background-color: #01B4FF;
+border: none;
+box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);
+border-radius: 5px;
+/* FOLLOWING CODE WILL DISABLE LINK IN DESKTOP VERSION*/
+pointer-events: none;
+cursor: default;
+}
+
+#lg_signup_btn
+{
+display: none;
+}
+/* END OF STYLES FOR THE FIRST (L) BLOCK */
+
+
+/* START OF STYLES FOR THE SECOND (R) BLOCK */
+
+.description_space
+{
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+height: 100%;
+width: 34%;
+margin-left: 3%;
+}
+
+.description_space p
+{
+color: #595959;
+font-size: 1.5em;
+font-family: 'Roboto', sans-serif;
+}
+
+#favourite_btn
+{
+display: block;
+width: 100%;
+text-transform: uppercase;
+font-family: 'Roboto', sans-serif;
+font-size: 1.2vmax;
+font-weight: bold;
+padding: 3%;
+background-color: #FFFFFF;
+border: 1px solid #00B2FF;
+color: #00B2FF;
+margin-bottom: 40%;
+}
+
+.rating_space
+{
+height: 100%;
+box-shadow: 0 0 0 1px #979797;
+}
+
+.rating_space p
+{
+font-size: 1.5vmax;
+text-align: center;
+font-family: 'Roboto', sans-serif;
+}
+
+#rt_star_aligner
+{
+display: flex;
+justify-content: space-around;
+}
+
+.rt_star
+{
+background-image: url(../img/rating_star.png);
+background-size: 100%;
+background-repeat: no-repeat;
+width: 3vmax;
+height: 3vmax;
+margin-top: 7.5%;
+}
+
+.loc_online
+{
+margin: 0;
+}
+
+#loc_space
+{
+margin: 0;
+box-shadow: 0 0 0 1px #979797;
+}
+
+#loc_space p
+{
+font-size: 1.5vmax;
+text-align: center;
+padding: 4%;
+margin: 0;
+font-family: 'Roboto', sans-serif;
+}
+
+#online_space
+{
+box-shadow: 0 0 0 1px #979797;
+color: #19C832;
+}
+
+#online_space p
+{
+font-size: 1.5vmax;
+text-align: center;
+color: #19C832;
+padding: 4%;
+margin: 0;
+font-family: 'Roboto', sans-serif;
+}
+
+/* END OF STYLES FOR THE SECOND (R) BLOCK */
+
+#bio
+{
+width: 55%;
+}
+
+#bio p
+{
+font-family: 'Roboto', sans-serif;
+font-size: 1.7vmax;
+line-height: 2vmax;
+}
+
+
+/* START OF STYLING FOR THE REVIEWS */
+.reviews_space
+{
+margin-left: 8%;
+}
+
+.reviews_space h1
+{
+color: #00B2FF;
+font-size: 3vmax;
+}
+
+.review
+{
+width: 55%;
+}
+
+.rev_rating_space
+{
+display: flex;
+}
+
+.rev_rating_space .rt_star
+{
+width: 3vmax;
+margin-right: 1vmax;
+}
+
+.review
+{
+margin: 5% 0 5% 0;
+}
+
+.rev_rating_space
+{
+width: 25%;
+min-width: 200px;
+}
+
+.review_txt
+{
+display: flex;
+width: 90%;
+}
+
+.review_txt p
+{
+font-family: 'Roboto', sans-serif;
+font-size: 1.8vmax;
+line-height: 3vmax;
+font-weight: lighter;
+font-style: italic;
+}
+
+.quotemark
+{
+width: 2vmax;
+}
+
+
+.signature p
+{
+font-family: 'Roboto', sans-serif;
+font-size: 1.5vmax;
+font-weight: bold;
+}
+
+/* START OF PAGE SELECTOR STYLES*/
+.page_selector
+{
+display: flex;
+align-items: center;
+width: 25%;
+/*min-width: 200px;*/
+border: 1px solid #ddd;
+border-radius: 5px;
+margin: 4%;
+margin-left: 8%;
+}
+
+.page_selector div
+{
+font-family: 'Roboto', sans-serif;
+font-size: 2vmax;
+color: #00B2FF;
+text-align: center;
+padding-top: 4%;
+padding-bottom: 4%;
+box-shadow: 0 0 0 1px #ddd;
+flex-grow: 1;
+}
+
+#current_page
+{
+background-color: #00B2FF;
+color: #ffffff;
+border: 0;
+}
+
+.sel_command
+{
+box-shadow: none !important;
+}
+/* END OF PAGE SELECTOR STYLES*/
+
+
+} /*END OF DESKTOP MEDIA QUERY*/
+
+/*____________________________________________ START OF MEDIA QUERY FOR NARROW VIEWPORTS (TOP NAV COLLAPSED TO HAMBURGER)*/
+
+@media only screen  and (min-device-width : 481px) and (max-width: 880px){
+
+#back_btn
+{
+padding: .3em;
+margin-top: 1em;
+}
+
+#back_btn a
+{
+font-size: .8em
+}
+
+#play_icon
+{
+width: 44px;
+height: 44px;
+}
+
+#favourite_btn
+{
+font-size: .8em
+}
+
+.rating_space p, #loc_space p, #online_space p
+{
+font-size: .8em
+}
+
+#lg_signup_btn
+{
+font-size: 1em;
+}
+
+#bio p
+{
+font-size: 1em;
+line-height: 1.5em;
+}
+
+.reviews_space h1
+{
+font-size: 1.5em;
+}
+
+.review_txt p
+{
+font-size: 1em;
+line-height: 1.5em;
+}
+
+.signature p
+{
+font-size: 1em;
+}
+
+.page_selector
+{
+width: 200px;
+}
+
+.page_selector div
+{
+font-size: 1em;
+}
+
+} /* END OF STYLING FOR NARROW VIEWPORTS */
+
+/* START OF MEDIA QUERY FOR NARROWER VIEWPORTS*/
+@media only screen  and (min-device-width : 481px) and (max-width: 545px){
+
+.photo_description
+{
+flex-direction: column;
+}
+
+.photo_space
+{
+width: 80%;
+}
+
+.description_space
+{
+width: 80%;
+margin: 5% 0;
+}
+
+#favourite_btn
+{
+margin-bottom: 5%;
+}
+
+#lg_signup_btn
+{
+width: 80%;
+}
+
+#bio
+{
+width: 80%;
+}
+
+.review
+{
+width: 80%;
+}
+
+}/* END OF MEDIA QUERY FOR NARROWER VIEWPORTS*/
+
+/* --------------------------------------------------------------------------------------------------------------------------*/
+/* START OF MOBILE MEDIA QUERY */
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px)
+{
+
+*
+{
+/*border: 1px solid black;*/
+}
+
+body
+{
+/*max-height: 3500px;*/
+}
+
+#back_btn /* STYLES FOR TOP LEFT "BACK BUTTON" */
+{
+width: 60%;
+padding: 2%;
+background-color: #FFFFFF;
+border: 4px solid #CCCCCC;
+border-radius: 10px;
+margin: 4%;
+font-family: 'Roboto', sans-serif;
+font-size: 3em;
+text-align: center;
+color: #595959;
+display: block;
+}
+
+#personname
+{
+font-size: 4em;
+text-align: center;
+}
+
+/* START OF STYLING FOR INDIVIDUAL PROFILE GRID */
+.profile
+{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+}
+
+#bio
+{
+order: -1;
+margin: 0 3% 0 3%;
+flex-basis: 45%;
+}
+
+#bio p
+{
+font-family: 'Roboto', sans-serif;
+font-size: 3em;
+}
+
+.photo_description
+{
+flex-basis: 46%;
+margin-right: 3%;
+}
+
+.photo_space
+{
+height: 600px;
+background-image: url(../img/john_long.jpg);
+background-size: 100%;
+background-repeat: no-repeat;
+background-color: #D8D8D8;
+box-shadow: 0  0  0 2px #979797;
+}
+
+#play_icon
+{
+display: none;
+}
+
+.description_space
+{
+display: flex;
+flex-direction: column;
+/*box-shadow: 0  0  0 2px #979797;*/
+}
+
+.rating_space
+{
+box-shadow: 0  0  0 2px #979797;
+}
+
+.rating_space p
+{
+display: none;
+}
+
+#rt_star_aligner
+{
+height: 120px;
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
+
+.rt_star
+{
+width: 50px;
+height: 50px;
+background-image: url(../img/rating_star.png);
+background-size: 100%;
+background-repeat: no-repeat;
+}
+
+.loc_online
+{
+display: flex;
+}
+
+#loc_space, #online_space
+{
+box-shadow: 0  0  0 2px #979797;
+flex-basis: 50%;
+padding: 3% 0;
+}
+
+#loc_space p, #online_space p
+{
+font-size: 2.5em;
+text-align: center;
+font-family: 'Roboto', sans-serif;
+}
+
+#online_space p
+{
+color: #19C832;
+}
+
+.profile_btn
+{
+text-transform: uppercase;
+font-family: 'Roboto', sans-serif;
+font-size: 3vmax;
+text-align: center;
+}
+
+#lg_signup_btn
+{
+font-size: 2.5vmax;
+color: #fff;
+padding: 3% 8%;
+margin: 5% 0;
+background-color: #01B4FF;
+box-shadow: 0 10px 20px 0 rgba(0,0,0,0.5);
+border-radius: 15px;
+min-width: 45vmax;
+}
+
+#lg_signup_btn_desk
+{
+display: none;
+}
+
+#favourite_btn
+{
+padding: 5% 0 5% 0;
+margin-top: 10%;
+font-weight: bold;
+background-color: #FFFFFF;
+border: 2px solid #00B2FF;
+color: #00B2FF;
+order: 99;
+}
+
+/* END OF STYLING FOR INDIVIDUAL PROFILE GRID*/
+
+/* START OF STILYNG FOR REVIEWS SPACE */
+
+.reviews_space
+{
+
+}
+
+.reviews_space h1
+{
+color: #00B2FF;
+margin-left: 3%;
+}
+
+.review
+{
+margin-bottom: 15%;
+margin-left: 4%;
+}
+
+.rev_rating_space
+{
+width: 50%;
+margin-top: 10%;
+margin-left: 25%;
+margin-bottom: 5%;
+display: flex;
+justify-content: space-around;
+}
+
+.review_txt
+{
+display: inline-block;
+width: 75%;
+margin-left: 8%;
+}
+
+.review_txt p
+{
+font-family: 'Roboto', sans-serif;
+font-size: 3em;
+font-style: italic;
+text-align: center;
+}
+
+.close_quote
+{
+/*resize: 200%;
+position: relative;
+top: 20px;*/
+}
+
+.signature p
+{
+font-family: 'Roboto', sans-serif;
+font-size: 3em;
+font-weight: bold;
+margin-top: 5%;
+}
+
+.page_selector
+{
+display: none;
+}
+
+footer
+{
+/*position: relative;
+top: -1000px;*/
+}
+
+} /*END OF MOBILE MEDIA QUERY*/

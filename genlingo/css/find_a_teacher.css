@@ -1,0 +1,774 @@
+/* ____________________________________________ COMMON STYLES __________________________________*/
+
+header
+{
+background-image: none;
+height: 100%;
+}
+
+main p, div
+{
+font-family: 'Roboto', sans-serif;
+}
+
+.cent_head
+{
+width: 100%;
+margin: 5% 0%;
+text-align: center;
+font-family: 'RobotoSlab', sans-serif;
+}
+
+.filter_btn
+{
+display: inline-block;
+text-transform: uppercase;
+text-align: center;
+color: #ffffff;
+border: 1px solid #01B4FF;
+font-family: 'Roboto', sans-serif;
+}
+
+#online_now
+{
+color: #ffffff;
+background-color: #01B4FF;
+}
+
+#all_teachers
+{
+color: #01B4FF;
+background-color: #ffffff;
+}
+
+/* ____________________________________________ START OF MOBILE MEDIA QUERY __________________________________*/
+
+@media only screen and (max-device-width : 480px)
+{
+
+.cent_head
+{
+margin-top: 10%;
+font-size: 4.5em;
+}
+
+.topButtons_cont
+{
+width: 100%;
+}
+
+#filters_spacer
+{
+display: none;
+}
+
+.filter_btn
+{
+display: inline-block;
+width: 36%;
+font-size: 2.7em;
+padding: 3% 5%;
+margin: 5% 0% 5% 2.7%;
+}
+
+#sort_options
+{
+margin: 3%;
+}
+
+.ddown_label
+{
+width: 59%;
+display: inline-block;
+font-size: 3em;
+text-align: right;
+vertical-align: top;
+margin: 3% 2%;
+}
+
+#sort_dropdown
+{
+display: inline-block;
+width: 30%;
+font-size: 3em;
+background-color: #ffffff;
+border: 2px solid #000000;
+border-radius: 20px;
+vertical-align: bottom;
+padding: 3% 0 3% 5%;
+}
+
+#arrow_spacer
+{
+display: inline-block;
+}
+
+.profile
+{
+display: inline-block;
+width: 45%;
+margin-top: 5%;
+margin-left: 2.7%;
+}
+
+.profile p
+{
+font-size: 3em;
+text-align: center;
+}
+
+.photo_space
+{
+width: 100%;
+height: 300px;
+background-color: #D8D8D8;
+border: 2px solid #979797;
+}
+
+.rating_space
+{
+width: 100%;
+height: 100px;
+background-color: #ffffff;
+border-left: 2px solid #979797;
+border-right: 2px solid #979797;
+}
+
+.rt_star_aligner
+{
+width: 100%;
+padding-left: 10%;
+padding-top: 5%;
+}
+
+.rt_star
+{
+width: 15%;
+}
+
+.status_space
+{
+width: 100%;
+height: 80px;
+background-color: #ffffff;
+border: 2px solid #979797;
+}
+
+.status_space div
+{
+width: 49%;
+height: 100%;
+display: inline-block;
+}
+
+.status_space div p
+{
+font-size: 2em;
+margin-top: 8%;
+}
+
+.online_space
+{
+border-left: 2px solid #979797;
+color: #19C832;
+}
+
+.online_space p
+{
+color: #19C832;
+}
+
+.description_space
+{
+display: none;
+}
+
+.more_space
+{
+width: 100%;
+height: 80px;
+background-color: #01B4FF;
+border: 2px solid #979797;
+}
+
+.more_space p
+{
+text-transform: uppercase;
+color: #fff;
+text-align: center;
+font-size: 2.5em;
+margin-top: 3%;
+}
+
+/*END OF STYLING FOR TEACHERS PROFILES */
+
+/* START OF TEACHERS PICS */
+
+#tom_pic
+{
+background-image: url("../img/tom.jpg");
+background-size: 100%;
+background-position: 25%;
+background-repeat: no-repeat;
+}
+
+#barbara_pic
+{
+background-image: url("../img/barbara.jpg");
+background-size: 100%;
+background-position: 50% 25%;
+background-repeat: no-repeat;
+}
+
+#john_pic
+{
+background-image: url("../img/john.jpg");
+background-size: 100%;
+background-position: 50% 25%;
+background-repeat: no-repeat;
+}
+
+#colin_pic
+{
+background-image: url("../img/colin.jpg");
+background-size: 100%;
+background-position: 50% 25%;
+background-repeat: no-repeat;
+}
+
+#sue_pic
+{
+background-image: url("../img/sue.jpg");
+background-size: 100%;
+background-position: 50% 0;
+background-repeat: no-repeat;
+}
+
+#jenny_pic
+{
+background-image: url("../img/jenny.jpg");
+background-size: 100%;
+background-position: 50% 0;
+background-repeat: no-repeat;
+}
+
+#judith_pic
+{
+background-image: url("../img/judith.jpg");
+background-size: 200%;
+background-position: 30% 15%;
+background-repeat: no-repeat;
+}
+
+#william_pic
+{
+background-image: url("../img/william.jpg");
+background-size: 120%;
+background-position: 30% 15%;
+background-repeat: no-repeat;
+}
+
+#len_pic
+{
+background-image: url("../img/len.jpg");
+background-size: 120%;
+background-position: 30% 15%;
+background-repeat: no-repeat;
+}
+
+/* END OF TEACHERS PICS */
+
+/* START OF STYLING FOR PAGE SELECTOR */
+
+.page_selector
+{
+display: flex;
+width: 70%;
+border: 4px solid #ddd;
+border-radius: 20px;
+margin: 5% 15%;
+}
+
+.page_selector div
+{
+/*width: 1em;*/
+/*display: inline-block;*/
+font-size: 3em;
+margin: 0;
+color: #00B2FF;
+text-align: center;
+padding: 3%;
+box-shadow: 0 0 0 2px #ddd;
+flex-grow: 1;
+}
+
+#current_page
+{
+background-color: #00B2FF;
+color: #ffffff;
+border: 0;
+}
+
+.sel_command
+{
+box-shadow: none !important;
+}
+
+
+} /*END OF MOBILE MEDIA QUERY*/
+
+/* ____________________________________________ START OF DESKTOP MEDIA QUERY __________________________________*/
+
+@media only screen  and (min-device-width : 481px) {
+
+*
+{
+/*border: 1px solid;*/
+}
+
+.topButtons_cont
+{
+width: 88%;
+margin-left: 2%;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+
+.teachers_filters
+{
+width: 28%;
+min-width: 205px;
+margin-left: 4%;
+min-height: 1px;
+}
+
+#filters_space
+{
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: space-between;
+}
+
+.filter_btn
+{
+/*display: inline-block;*/
+/*margin-bottom: 3%;*/
+padding: 3% 2%;
+font-size: 1.4vmax;
+width: 44%;
+/*min-width: 90px;*/
+}
+
+#online_now
+{
+/*display: inline-block;*/
+color: #ffffff;
+background-color: #01B4FF;
+/*flex-grow: 1;*/
+/*float: left;*/
+}
+
+#all_teachers
+{
+/*display: inline-block;*/
+color: #01B4FF;
+background-color: #ffffff;
+/*flex-grow: 1;*/
+/*float: right;*/
+}
+
+#sort_space
+{
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.ddown_label
+{
+width: 60%;
+text-align: right;
+/*display: inline-block;*/
+/*vertical-align: bottom;*/
+font-size: 1.7vmax;
+/*margin-left: 3%;*/
+}
+
+#sort_dropdown
+{
+/*display: inline-block;*/
+background-color: #ffffff;
+border: 1px solid #595959;
+border-radius: 5px;
+padding: 3% 5%;
+font-size: 1.5vmax;
+}
+
+#arrow_spacer
+{
+display: inline-block;
+}
+
+/* START OF STYLING FOR INDIVIDUAL PROFILE GRID */
+/* BOX SHADOWS USED HERE AS THEY COLLAPSE AND MAKE FOR NEATER BORDERS*/
+.profiles_grid
+{
+width: 88%;
+margin-left: 2%;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+
+.profile
+{
+/*display: inline-block;*/
+width: 28%;
+min-width: 205px;
+/*margin: 2.5% 4%;*/
+margin-left: 4%;
+/*flex-grow: 1;*/
+}
+
+.profile p
+{
+font-size: 2vmax;
+}
+
+.photo_space
+{
+width: 100%;
+padding-bottom: 75%;
+background-color: #D8D8D8;
+box-shadow: 0 0 0 1px #979797;
+}
+
+.rt_star_aligner
+{
+width: 100%;
+display: flex;
+justify-content: space-around;
+align-items: center;
+padding: 5% 0 5% 0;
+box-shadow: 0 0 0 1px #979797;
+}
+
+.rt_star
+{
+width: 15%;
+height: 15%;
+}
+
+.status_space
+{
+display: flex;
+box-shadow: 0 0 0 1px #979797;
+}
+
+.status_space p
+{
+text-align: center;
+}
+
+.loc_space, .online_space
+{
+flex-basis: 50%;
+box-shadow: 0 0 0 1px #979797;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+}
+
+.loc_space p, .online_space p
+{
+font-size: 1.7vmax;
+line-height: 2vmax;
+/*margin: 0;*/
+padding: 3%;
+/*height: 100%;*/
+}
+
+/*.online_space
+{
+flex-basis: 50%;
+box-shadow: 0 0 0 1px #979797;
+color: #19C832;
+}*/
+
+.online_space p
+{
+color: #19C832;
+}
+
+.description_space
+{
+box-shadow: 0 0 0 1px #979797;
+/*height: 12vmax;*/
+}
+
+.description_space p
+{
+font-size: 1.5vmax;
+/*height: 185px;*/
+margin: 0;
+padding: 3%;
+}
+
+.more_space
+{
+margin: 0;
+width: 100%;
+background-color: #01B4FF;
+box-shadow: 0 0 0 1px #979797;
+}
+
+.more_space p
+{
+text-align: center;
+text-transform: uppercase;
+color: #fff;
+margin: 0;
+padding: 3% 0;
+}
+/* END OF STYLING FOR INDIVIDUAL PROFILE GRID*/
+
+/* START OF TEACHERS PICS */
+
+#tom_pic
+{
+background-image: url("../img/tom.jpg");
+background-size: 100%;
+background-position: 25%;
+background-repeat: no-repeat;
+}
+
+#barbara_pic
+{
+background-image: url("../img/barbara.jpg");
+background-size: 100%;
+background-position: 50% 25%;
+background-repeat: no-repeat;
+}
+
+#john_pic
+{
+background-image: url("../img/john.jpg");
+background-size: 100%;
+background-position: 50% 25%;
+background-repeat: no-repeat;
+}
+
+#colin_pic
+{
+background-image: url("../img/colin.jpg");
+background-size: 100%;
+background-position: 50% 25%;
+background-repeat: no-repeat;
+}
+
+#sue_pic
+{
+background-image: url("../img/sue.jpg");
+background-size: 100%;
+background-position: 50% 0;
+background-repeat: no-repeat;
+}
+
+#jenny_pic
+{
+background-image: url("../img/jenny.jpg");
+background-size: 100%;
+background-position: 50% 0;
+background-repeat: no-repeat;
+}
+
+#judith_pic
+{
+background-image: url("../img/judith.jpg");
+background-size: 200%;
+background-position: 30% 15%;
+background-repeat: no-repeat;
+}
+
+#william_pic
+{
+background-image: url("../img/william.jpg");
+background-size: 120%;
+background-position: 30% 15%;
+background-repeat: no-repeat;
+}
+
+#len_pic
+{
+background-image: url("../img/len.jpg");
+background-size: 120%;
+background-position: 30% 15%;
+background-repeat: no-repeat;
+}
+
+/* END OF TEACHERS PICS */
+
+
+/* START OF PAGE SELECTOR STYLES*/
+.selector_spacer
+{
+min-height: 1px;
+display: inline-block;
+/*width: 24.9%;
+min-width: 200px;
+margin: 2.5% 4%;*/
+width: 28%;
+min-width: 205px;
+margin-left: 4%;
+}
+
+.page_selector
+{
+display: inline-flex;
+align-items: center;
+width: 24.5%;
+min-width: 200px;
+margin: 2.5% 3%;
+border: 1px solid #ddd;
+border-radius: 5px;
+}
+
+.page_selector div
+{
+font-family: 'Roboto', sans-serif;
+font-size: 2vmax;
+color: #00B2FF;
+text-align: center;
+padding-top: 4%;
+padding-bottom: 4%;
+box-shadow: 0 0 0 1px #ddd;
+flex-grow: 1;
+}
+
+#current_page
+{
+background-color: #00B2FF;
+color: #ffffff;
+border: 0;
+}
+
+.sel_command
+{
+box-shadow: none !important;
+}
+/* END OF PAGE SELECTOR STYLES*/
+
+} /*END OF DESKTOP MEDIA QUERY*/
+
+/*____________________________________________ START OF MEDIA QUERY FOR NARROW VIEWPORTS (TOP NAV COLLAPSED TO HAMBURGER)*/
+
+@media only screen  and (min-device-width : 481px) and (max-width: 880px){
+
+.profile
+{
+width: 40%;
+margin-left: 6%;
+margin-bottom: 5%;
+min-width: 206px;
+}
+
+.teachers_filters
+{
+margin-left: 10%;
+margin-bottom: 3%;
+min-width: 206px;
+}
+
+.topButtons_cont
+{
+justify-content: flex-end;
+}
+
+/* START OF RESTYLING FOR TEXT SIZE */
+
+.filter_btn
+{
+/*font-size: 1.4vmax;*/
+font-size: .8em;
+}
+
+.ddown_label
+{
+font-size: .8em;
+}
+
+#sort_dropdown
+{
+font-size: .8em;
+}
+
+.profile p
+{
+/*font-size: 2vmax;*/
+font-size: 1.2em;
+}
+
+.status_space p
+{
+/*font-size: 2vmax;*/
+font-size: 1em;
+}
+
+.description_space
+{
+/*font-size: 2vmax;*/
+font-size: .8em;
+}
+
+.selector_space
+{
+width: 88%;
+margin-left: 3%;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+
+.page_selector div
+{
+font-size: .8em;
+}
+
+} /* END OF MEDIA QUERY FOR NARROW VIEWPORTS */
+
+/* START OF MEDIA QUERY FOR NARROWER VIEWPORTS*/
+@media only screen  and (min-device-width : 481px) and (max-width: 545px){
+
+.topButtons_cont
+{
+flex-direction: column;
+align-items: center;
+margin-left: 0;
+}
+
+#filters_spacer
+{
+display: none;
+}
+
+.profiles_grid
+{
+flex-direction: column;
+align-items: center;
+}
+
+.profile
+{
+/*margin-left: 14%;*/
+}
+
+.selector_space
+{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+}/*END OF NARROWER DESKTOP MEDIA QUERY*/

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Genlingo - Sign Up</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/styles_mob.css">
+    <link rel="stylesheet" type="text/css" href="css/styles_desk.css">
+    <link rel="stylesheet" type="text/css" href="css/sign_up_first.css">
+</head>
+
+<body>
+
+    <header>
+
+        <div class="header_spacer">
+        
+            <nav>   
+
+                <!-- CHECKBOX CONTROL TO TOGGLE MENU VISIBILITY -->
+                <input id="menu_toggle" type="checkbox" name="menu_toggle">
+
+                <!-- CREATES A HAMBURGER-STYLE MENU BUTTON AS A LABEL FOR THE CHECKBOX CONTROL -->
+                <label for="menu_toggle" id="hamburger"></label>
+
+                <!-- NAVIGATION BAR UL -->
+                <ul id="nav_menu">
+
+                    <li id="menu_header">Menu</li>
+
+                    <li class="logo_space"><a href="index.html"><img src="img/logo_large.png"></a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="how_it_works.html">How it works</a></li>
+                    <li><a href="find_a_teacher.html">Find a teacher</a></li>
+                    <li>About</li>
+                    <li id="signup_btn">Sign up / in</li>
+
+                </ul>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+    <main>
+
+        <h2 class="cent_head">Welcome!</h2>
+
+        <section class="sub_par">
+            <p class="intro" id="profsetup_intro">OK, let’s get you a profile setup. This will take no more than 5 minutes.</p>
+        </section>
+
+        <form class="signup_form" id="signup_2">
+
+            <section class="input_space">
+                <label for="username_field"><h2 class="blue_head">What do you like to be called?</h2></label>
+                <input type="text" class="input_field" id="username_field" name="username" placeholder="preferred name">
+            </section>
+
+            <section class="input_space">
+                <label for="loc_field"><h2 class="blue_head">Where are you from?</h2></label>
+                <input type="text" class="input_field" id="loc_field" name="location" placeholder="home country / town">
+            </section>
+
+            <section class="input_space">
+                <label for="howlong_field"><h2 class="blue_head">How long have you been learning English?</h2></label>
+                <select class="input_field" id="howlong_field" name="howlong">
+                    <option value="0">0-1</option>
+                    <option value="2">2-3</option>
+                    <option value="3">3-5</option>
+                    <option value="5">+5</option>
+                </select>
+            </section>
+
+            <section class="input_space">
+                <label for="gender_field"><h2 class="blue_head">Gender:</h2></label>
+                <select class="input_field" id="gender_field" name="gender">
+                    <option value="m">Male</option>
+                    <option value="f">Female</option>
+                </select>
+            </section>
+
+            <section class="input_space" id="photo_space">
+                <h2 class="blue_head" id="profPhoto_label">Profile photo:</h2>
+                <div id="photo_btn">Add</div>
+            </section>
+
+            <section class="input_space">
+                <label for="intro_field"><h2 class="blue_head">Share a short introduction:</h2></label>
+                <input type="textarea" class="input_field" id="intro_field" name="intro">
+            </section>
+
+            <section class="input_space" id="buttons_space">
+                <button class="start_btn_2" id="save_draft">save draft</button>
+                <a href="add_credits.html"><div class="start_btn_2" id="proceed">Finish and proceed</div></a>
+            </section>
+
+
+        </form>
+
+    </main>
+
+    <footer>
+        
+        <div class="footer_top">
+
+            <div class="sec_footlinks">
+                <p>Contact Us</p>
+                <p>Become a teacher</p>
+                <p>FAQ</p>
+                <p>Terms and Conditions</p>
+            </div>
+
+            <div class="textsize_ctrls">
+                <div id="chng_txt_size">Change text size</div>
+                <div class="textsize_btns">
+                    <button class="size_btn" id="dec_btn">-</button>
+                        <p>
+                            <span id="small_A">A</span>
+                            <span id="large_A">A</span>
+                        </p>
+                    <button class="size_btn" id="inc_btn">+</button>
+                </div>
+            </div>
+
+        </div>
+
+        <img src="img/devices.png" alt="Desktops, tablets, smartphones">
+        <p class="cent_foot_cont">Enjoy using Genlingo on the device of your choice.</p>
+        <p class="cent_foot_cont">Copyright Humanics &copy; 2017</p>
+    </footer>
+
+</body>
+
+</html>

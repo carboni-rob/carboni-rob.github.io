@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+
+<html  lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Genlingo - How it works</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/styles_mob.css">
+    <link rel="stylesheet" type="text/css" href="css/styles_desk.css">
+    <link rel="stylesheet" type="text/css" href="css/how_it_works.css">
+</head>
+
+<body>
+
+    <header>
+
+        <div class="header_spacer">
+        
+            <nav>   
+
+                <!-- CHECKBOX CONTROL TO TOGGLE MENU VISIBILITY -->
+                <input id="menu_toggle" type="checkbox" name="menu_toggle">
+
+                <!-- CREATES A HAMBURGER-STYLE MENU BUTTON AS A LABEL FOR THE CHECKBOX CONTROL -->
+                <label for="menu_toggle" id="hamburger"></label>
+
+                <!-- NAVIGATION BAR UL -->
+                <ul id="nav_menu">
+
+                    <li id="menu_header">Menu</li>
+
+                    <li class="logo_space"><a href="index.html"><img src="img/logo_large.png"></a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li id="this_page">How it works</li>
+                    <li><a href="find_a_teacher.html">Find a teacher</a></li>
+                    <li>About</li>
+                    <li id="signup_btn">Sign up / in</li>
+
+                </ul>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+    <main>
+
+        <h1 class="cent_head">How Genlingo works</h1>
+
+        <p class="intro">
+            Genlingo is a video chat platform, designed for English language learners. You pay a small amount per minute to practise your conversation skills with a first language English retiree. It’s easy to get started - just follow the steps below!
+        </p>
+
+
+        <section class="genlingo_steps">
+
+            <div id="infographic_wrap"><img src="img/how_it_works_1.png" id="infographic_desk"></div>
+
+            <div class="large_ol"> <!-- USING DIV BECAUSE NOT IDEAL TO USE OL LIST HERE, AS IT ONLY ACCEPTS LI -->
+
+                <figure class="infographic" id="infographic_mob"></figure>
+                <div class="steps_space">
+                    <h2 class="step" id="step_1">1. Browse our list of teachers and find one that you like.</h2>
+                    <p>All are patient and helpful.</p>
+                </div>
+                
+                <div class="steps_space">
+                    <h2 class="step" id="step_2">2.  Sign up and setup a profile.</h2>
+                    <p>Help our teachers know who they are talking to. It only takes 5 minutes.</p>
+                </div>
+                <figure class="infographic" id="infographic_2"></figure>
+
+                <figure class="infographic" id="infographic_3"></figure>
+                <div class="steps_space">
+                    <h2 class="step" id="step_3">3. Get talking!</h2>
+                    <p>You pay only 25¢ per minute, and if it’s your first time the first 10 mins are free!</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="startconv_space">
+
+            <a href="find_a_teacher.html">
+                <div class="start_btn_2" id="startconv">Start a conversation</div>
+            </a>
+
+            <p class="sub_btn">Find someone to speak with now</p>
+
+        </section>
+
+        <section class="whos_online">
+            
+            <h2 class="cent_head">Who are the teachers?</h2>
+            
+            <div class="details_space">
+
+                <img src="img/teacher_2.jpg" alt="One of our teachers">
+
+                <p class="intro_small">
+                Our teachers are motivated, helpful and over 60. We work with the best experienced native English speakers who are generally retirees with tons of skill and passion.
+                </p>
+
+            </div>
+
+            <a href="find_a_teacher.html">
+                <div class="start_btn_2" id="browseTeachers_btn">Browse all our teachers</div>
+            </a>
+
+        </section>
+
+        <section>
+
+            <h2 class="cent_head">How much does it cost?</h2>
+
+            <p class="intro">
+            At Genlingo we like to keep things nice and simple, and pricing is no different. As a learner, you pay:
+            </p>
+            <h2 class="blue_cent_head">25¢ per minute (US Dollars)</h2>
+
+        </section>
+    
+        <section class="cream_bground">
+            
+            <h2 class="cent_head">Interested in teaching?</h2>
+
+            <div class="details_space" id="interested">
+
+                <img src="img/teacher_1.jpg" alt="One of our teachers">
+
+                <p class="intro_small">
+                Genlingo is a wonderful opportunity to share your wisdom with eager learners - and you can make some extra money too! If you’re over 60 years old, a native English speaker and are interested in teaching, please get in touch with us by following the link below.
+                </p>
+                
+            </div>
+
+            <div class="start_btn_2" id="findMore_btn">
+                Get in touch
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- ________________________________________ MAIN-TO-FOOTER DIVIDER _______________________________________________ -->
+
+    <footer>
+        
+        <div class="footer_top">
+
+            <div class="sec_footlinks">
+                <p>Contact Us</p>
+                <p>Become a teacher</p>
+                <p>FAQ</p>
+                <p>Terms and Conditions</p>
+            </div>
+
+            <div class="textsize_ctrls">
+                <div id="chng_txt_size">Change text size</div>
+                <div class="textsize_btns">
+                    <button class="size_btn" id="dec_btn">-</button>
+                        <p>
+                            <span id="small_A">A</span>
+                            <span id="large_A">A</span>
+                        </p>
+                    <button class="size_btn" id="inc_btn">+</button>
+                </div>
+            </div>
+
+        </div>
+
+        <img src="img/devices.png" alt="Desktops, tablets, smartphones">
+        <p class="cent_foot_cont">Enjoy using Genlingo on the device of your choice.</p>
+        <p class="cent_foot_cont">Copyright Humanics &copy; 2017</p>
+    </footer>
+
+
+<script type="text/javascript" src="scripts/bg_hover.js"></script>
+
+</body>
+
+</html>

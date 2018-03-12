@@ -1,0 +1,530 @@
+@media only screen and (max-device-width : 480px) {
+
+*
+{
+margin: 0;
+padding: 0;
+font-family: 'RobotoSlab', sans-serif;
+color: #595959;
+}
+
+header
+{
+width: 100%;
+background-color: grey;
+}
+
+a
+{
+text-decoration: none;
+}
+
+h1
+{
+font-size: 4em;
+margin-left: 2%;
+}
+
+h2
+{
+font-size: 3em;
+}
+
+ol
+{
+width: 80%;
+margin: 10%;
+font-size: 3em;
+}
+
+nav
+{
+width: 100%;
+min-height: 220px;
+display: inline-block;
+background-color: #FFFFFF;
+background-image: url(../img/logo_small.png);
+background-repeat: no-repeat;
+background-size: 47%;
+background-position: 10%;
+box-shadow: 0 10px 20px 0 rgba(0,0,0,0.5);
+}
+
+#hamburger /*THIS IS THE BURGER MENU ICON ANCHORED TO THE TOP RIGHT OF THE SCREEN*/
+{
+z-index: 20;
+position: fixed;
+right: 50px;
+top: 50px;
+width: 150px;
+height: 120px;
+background-image: url(../img/burger.png);
+background-repeat: no-repeat;
+background-size: 80%;
+background-color: rgba(255,255,255,0.8);
+background-position: 50% 50%;
+border: 4px solid #01B4FF;
+border-radius: 20px;
+}
+
+#nav_menu /* THIS IS THE MENU POPUP */
+{
+display: none; /*HIDES MENU POPUP IN DEFAULT VIEW*/
+width: 100%;
+background-color: #F5F5F5;
+font-size: 6em;
+position: fixed;
+z-index: 10;
+box-shadow: 0 10px 20px 0 rgba(0,0,0,0.5);
+}
+
+.logo_space
+{
+display: none;
+}
+
+#nav_menu #menu_header /* STYLE FOR THE MENU HEADER */
+{
+font-family: 'RobotoSlab', sans-serif;
+font-size: 1em;
+color: #01B4FF;
+}
+
+#nav_menu li
+{
+font-family: 'Roboto', sans-serif;
+font-size: 0.7em;
+list-style-type: none;
+width: 86%;
+margin: 2%;
+padding: 4%;
+color: #333333;
+text-transform: uppercase;
+}
+
+#nav_menu a
+{
+font-family: 'Roboto', sans-serif;
+color: #333333;
+}
+
+#this_page /* MAKES CURRENT PAGE MENU LI IN BOLD */
+{
+font-weight: bold;
+}
+
+/* START OF TEXT SIZE CONTROLS, DEPRECATED SINCE MOVED TO FOOTER
+#font_control
+{
+text-transform: none !important;
+}
+
+#font_control p
+{
+display: inline-block;
+}
+
+.size_btn
+{
+display: inline-block;
+width: 150px;
+height: 150px;
+color: #fff;
+border-radius: 150px;
+background-color: #595959;
+vertical-align: text-bottom;
+}
+
+#dec_btn
+{
+margin-left: 3%;
+}
+
+#small_A
+{
+font-size: .7em;
+}
+
+#large_A
+{
+font-size: 2em;
+}
+
+END OF TEXT SIZE CONTROLS */
+
+#menu_toggle /*HIDES THE CHECKBOX USED TO TOGGLE DROPDOWN MENU*/
+{
+display: none;
+}
+
+#menu_toggle:checked ~ #nav_menu /*SHOWS DROPDOWN MENU WHEN CHECKBOX STATUS = CHECKED*/
+{
+display: block;
+}
+
+#menu_toggle:checked ~ #hamburger /*CHANGES MENU ICON INTO "X"*/
+{
+background-image: url(../img/burger_close.png);
+background-repeat: no-repeat;
+background-size: 80%;
+border: none;
+}
+
+/* _____________________________ END OF HEADER / NAVBAR ________________________________________*/
+
+.sub_header
+{
+background-image: url(../img/home1.jpg);
+background-repeat: no-repeat;
+background-size: 170%;
+background-position: -200px;
+}
+
+#top_motto
+{
+width: 90%;
+text-align: center;
+margin: 0% 5% 10% 5%;
+padding-top: 20%;
+font-size: 4em;
+font-weight: lighter;
+letter-spacing: 5px;
+color: #ffffff;
+text-shadow: 2px 4px 0px rgba(0,0,0,0.5);
+}
+
+#start_btn_1
+{
+width: 70%;
+margin: 5% 5%;
+padding: 2% 10%;
+text-align: center;
+font-size: 2.7em;
+text-transform: uppercase;
+font-family: 'Roboto', sans-serif;
+color: #ffffff;
+background-color: #42bae5;
+border: none;
+border-radius: 15px;
+box-shadow: 0 10px 20px 0 rgba(0,0,0,0.5);
+}
+
+#play_icon
+{
+margin-top: 5%;
+}
+
+#play_icon img
+{
+width: 14%;
+margin-left: 43%;
+}
+
+#watch_intro
+{
+width: 100%;
+text-align: center;
+color: #ffffff;
+font-family: 'Roboto', sans-serif;
+font-size: 3em;
+padding-bottom: 5%;
+}
+/* _____________________________ END OF SUBHEADER ________________________________________*/
+
+
+/* _____________________________ START OF SERVICE DESCRIPTION ____________________________*/
+
+.intro /*STYLE OF GENERIC PARAGRAPH, REUSED IN SEVERAL PAGES*/
+{
+font-family: 'Roboto', sans-serif;
+width: 90%;
+margin-top: 5%;
+margin-left: 0%;
+padding: 5%;
+font-size: 3em;
+}
+
+#motto_bis
+{
+line-height: 90px;
+text-align: center;
+font-size: 4.5em;
+font-weight: lighter;
+margin: 5%;
+}
+
+#center_pic1
+{
+width: 45%;
+margin: 5% 1.5% 5% 3%;
+}
+
+#center_pic2
+{
+width: 45%;
+margin: 5% 3% 5% 1.5%;
+}
+
+.cent_head /*STYLE OF GENERIC TITLE, REUSED IN SEVERAL PAGES*/
+{
+width: 90%;
+text-align: center;
+margin-left: 5%;
+font-size: 4em;
+font-weight: lighter;
+}
+
+
+/* _____________________________ START OF "HOW IT WORKS" SECTION _______________________*/
+
+.how_it_works ol /* 3-STEPS LIST TO GET STARTED */
+{
+width: 87%;
+margin-left: 10%;
+}
+
+.how_it_works li
+{
+font-family: 'Roboto', sans-serif;
+font-size: 1em;
+}
+
+.start_btn_2 /*STYLE OF GENERIC BLUE BUTTON, REUSED IN SEVERAL PAGES*/
+{
+width: 90%;
+margin-left: 5%;
+margin-bottom: 3%;
+padding: 3% 0%;
+text-align: center;
+font-size: 2.7em;
+text-transform: uppercase;
+font-family: 'Roboto', sans-serif;
+color: #ffffff;
+background-color: #42bae5;
+border: none;
+border-radius: 15px;
+box-shadow: 0 10px 20px 0 rgba(0,0,0,0.5);
+}
+
+
+/* _____________________________ START OF "WHO'S ONLINE" SECTION _______________________*/
+
+.whos_online /* STYLE FOR THE SECTION */
+{
+padding: 3% 0;
+background-color: #F5F5F5;
+}
+
+#teachers_space
+{
+margin-top: 10%;
+margin-left: 10%;
+}
+
+.teacher_profile
+{
+width: 48%;
+display: inline-block;
+position: relative;
+}
+
+.profpic_mkup /*MAKES THE CIRCLES THAT MOCKUP TEACHERS PICS*/
+{
+display: inline-block;
+width: 100px;
+height: 100px;
+border-radius: 100px;
+background-color: #d8d8d8;
+border: 4px solid #8f9091;
+margin-bottom: 10%;
+}
+
+/* POPULATE EACH DIV WITH A TEACHER'S PIC */
+#profpic_mkup1
+{
+background-image: url(../img/tom.jpg);
+background-size: 100%;
+background-repeat: no-repeat;
+}
+
+#profpic_mkup2
+{
+background-image: url(../img/judith.jpg);
+background-size: 200%;
+background-repeat: no-repeat;
+background-position: -30px -3px;
+}
+
+#profpic_mkup3
+{
+background-image: url(../img/yvonne.jpg);
+background-size: 200%;
+background-repeat: no-repeat;
+background-position: -70px -3px;
+}
+
+#profpic_mkup4
+{
+background-image: url(../img/colin.jpg);
+background-size: 100%;
+background-repeat: no-repeat;
+}
+
+#profpic_mkup5
+{
+background-image: url(../img/sue.jpg);
+background-size: 200%;
+background-repeat: no-repeat;
+background-position: -50px 0px;
+}
+
+#profpic_mkup6
+{
+background-image: url(../img/barbara.jpg);
+background-size: 200%;
+background-repeat: no-repeat;
+background-position: -40px -10px;
+}
+
+.teacher_profile p /*LABELS WITH TEACHERS NAMES*/
+{
+display: inline-block;
+padding: 5%;
+font-size: 3em;
+position: absolute; 
+}
+
+#and25
+{
+font-size: 4em;
+color: #42bae5;
+text-align: center;
+margin-bottom: 3%;
+}
+
+
+/* _____________________________ START OF "OUR NUMBERS" SECTION _______________________*/
+
+.our_numbers h2
+{
+color: #01B4FF;
+font-size: 4em;
+width: 100%;
+text-align: center;
+margin-top: 3%;
+margin-bottom: 3%;
+}
+
+
+/* _____________________________ START OF FOOTER _______________________*/
+
+footer
+{
+min-height: 400px;
+padding: 3%;
+background-color: #2a2b2b;
+}
+
+footer p
+{
+font-family: 'Roboto', sans-serif;
+font-size: 3em;
+color: #ffffff;
+padding: 2%;
+line-height: 2em;
+}
+
+footer div
+{
+padding: 2%;
+}
+
+.cent_foot_cont
+{
+text-align: center;
+}
+
+footer img
+{
+width: 90%;
+margin-left: 5%;
+}
+
+/* START OF STYLES FOR THE TEXT SIZE CONTROLS */
+.footer_top
+{
+display: flex;
+}
+
+.sec_footlinks
+{
+width: 50%;
+}
+
+.textsize_ctrls
+{
+width: 50%;
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: flex-end;
+font-style: italic;
+/*text-align: center;*/
+}
+
+.textsize_ctrls div
+{
+text-align: center;
+}
+
+.textsize_btns, .textsize_btns p
+{
+font-style: normal;
+display: flex;
+/*justify-content: center;*/
+align-items: baseline;
+}
+
+#chng_txt_size
+{
+font-family: 'Roboto', sans-serif;
+font-size: 3em;
+color: #ffffff;
+padding: 2%;
+line-height: 2em;
+font-style: italic;
+}
+
+#small_A, #large_A
+{
+color: #fff;
+padding: 0 10%;
+}
+
+#small_A
+{
+font-size: 1em;
+}
+
+#large_A
+{
+font-size: 2em;
+}
+
+.size_btn
+{
+width: 100px;
+height: 100px;
+border-radius: 100px;
+line-height: 100px;
+text-align: center;
+vertical-align: middle;
+background-color: #fff;
+color: #2a2b2b;
+border: none;
+font-weight: bolder;
+font-size: 5em;
+}
+
+
+} /*END OF MOBILE MEDIA QUERY*/
