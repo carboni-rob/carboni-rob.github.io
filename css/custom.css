@@ -1,0 +1,804 @@
+/*
+
+* Author: ROBERTO CARBONI
+
+* Assignment: Assessment 2 -  Recreate a Technology Web Page
+
+* Student ID: STU-00001225
+
+* Date: 2017/02/06
+
+* Ref: see inline comments
+
+_____________________________________________________/* CUSTOM STYLES ______________________________________________________*/
+
+body {
+    font-family: 'Merriweather', sans-serif;
+    background-color: #fff;
+}
+
+div  {
+	height: 100%;
+}
+
+a {
+	color: inherit;
+  	text-decoration: inherit;
+}
+
+h1 {
+	font-size: 2em;
+	/*font-weight: bold;*/
+	margin-top: 5px;
+	margin-bottom: 20px;
+}
+
+h2 {
+	color: #00456e;
+	font-size: 1.5em;
+	font-weight: bold;
+	margin-top: 3px;
+}
+
+h3 {
+	color: #005689;
+	font-weight: bold;
+	font-size: 1.5em;
+	margin-top: 3px;
+	margin-bottom: 3px;
+	padding: 5px;
+	/*line-height: 1.5em;*/
+}
+
+.grey_h3 {
+	color: #5c5c5c;
+}
+
+.white_h3 {
+	color: #fff;
+}
+
+.blue {
+	color: #005689;
+}
+
+.grey {
+	font-size: 1em;
+	line-height: 1.3em;
+	color: #7d7569;
+}
+
+h4 {
+	padding: 5px;
+	margin: 0;
+}
+
+h4.blue {
+	padding-left: 0;
+}
+
+h5 {
+	font-size: 1.2em;
+	margin: 0;
+	padding: 5px;
+}
+
+h6 {
+	margin: 0;
+	padding: 5px;
+}
+
+header, footer {
+	background-color: #005689;
+	color: #fff;
+}
+
+p {
+	/*font-size: 12px;*/
+	line-height: 1em;
+	padding: 5px;
+}
+
+.sublogo {
+	font-family: 'MerriweatherSans', sans-serif;
+	font-size: .9em;
+	color: #6fcff1;
+	position: absolute;
+	top: 62px;
+	right: 13px;
+}
+
+.support {
+	border-right: 1px solid rgba(255, 255, 255, 0.3);
+	padding-left: 5px;
+	margin-right: 5px;
+}
+
+.caption {
+	font-family: 'MerriweatherSans', sans-serif;
+	font-size: .9em;
+	color: #7d7569;
+}
+
+.logos_space {
+	padding: 0;
+}
+
+.auth_stamp {
+	color: #005689;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.auth_stamp p, .auth_stamp h5 {
+	margin: 5px;
+	padding: 0;
+}
+
+.auth_stamp h5 {
+	font-weight: bold;
+}
+
+.comments {
+	color: rgba(255, 255, 255, .8);
+}
+
+.advert {
+	border: 1px solid #dfdfdf;
+}
+
+.main_space {
+	background-color: #fff;
+	padding: 0;
+}
+
+.height_tall, .height_tall_sm {
+	height: 282px;
+}
+
+.height_short, .height_short_sm{
+	height: 250px;
+}
+
+.height_med {
+	height: 337px;
+}
+
+.height_xshort {
+	height: 125px;
+}
+
+.art_xsmall, .art_xsmall_sm {
+	height: 76px;
+	margin-bottom: 11px;
+}
+
+
+.stretch_container {
+	min-height: 100%;
+	overflow: hidden;
+}
+
+.container-fluid {
+	margin: 0;
+	padding: 0;
+}
+
+.row {
+	/*padding: 5px;*/
+}
+
+.relative {
+	position: relative;
+}
+
+.pull-bottom {
+    align-self: flex-end;
+}
+
+#logo_space {
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
+
+header img {
+	width: 320px;
+}
+
+.nav-pills {
+	padding-right: 0;
+	/*font-size: 1.1em;*/
+}
+
+.nav-pills > li {
+	padding: 5px;
+	/*font-size: 1.1em;*/
+}
+
+.btn-circle { /*this creates the circle around the icons encasing them in a button*/
+	margin-right: 10px;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	font-size: 12px;
+	border-radius: 15px;
+	color: #fff;
+	background-color: #005689;
+	border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.glyphicon-user, .glyphicon-search {
+	font-size: 1.3em;
+}
+
+.btn-favicon {
+	margin-right: 10px;
+	width: 30px;
+}
+
+#tr_compressed {
+	display: none;
+}
+
+.glyphicon-triangle-bottom {
+	font-size: .7em;
+}
+
+.mainNav_wrap {
+	background-color: #00456e;
+}
+
+#navBar_row {
+	position: relative;
+}
+
+#main_navBar {
+	white-space: nowrap;
+	overflow: hidden;
+	padding-right: 0;
+}
+
+#main_navBar > li {
+	display: inline-block;
+	padding: 5px 5px 0 5px;
+	overflow: hidden;
+	/*font-size: 1.1em;*/
+}
+
+.glyphicon-home {
+	padding-left: 10px;
+}
+
+#burger_menu {
+	background-color: #333;
+	padding: 5px;
+	position: absolute;
+	right: 0;
+}
+
+#bottomHeaderWrap {
+	background-color: #00507f;
+}
+
+#breadcrumb_top {
+	display: none;
+}
+
+.breadcrumb {
+	border-radius: 0;
+	font-family: 'Merriweather', serif !important;
+	font-weight: bolder;
+	margin: 0;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	color: #005689;
+	background-color: #dfdfdf;
+	/*padding: 0;*/
+}
+
+.breadcrumb > li + li:before { /*CHANGES SEPARATOR BETWEEN BREADCRUMBS, FOUND ON http://stackoverflow.com/questions/26798470/how-to-change-default-separator-icon-in-bootstrap-3-breadcrumbs*/
+    color: #767676;
+    content: "> ";
+    padding: 0 5px;
+}
+
+#breadcrumb_wrap {
+	background-color: #e5e5e5;
+}
+
+#breadcrumb_space {
+	padding: 0;
+}
+
+#main_wrap {
+	background-color: #f5f5f5;
+}
+
+#main_space {
+	background-color: #fff;
+	padding-top: 10px;
+	/*display: flex;*/
+}
+
+.flex {
+	display: flex;
+}
+
+#allStories_btn {
+	border-radius: 15px;
+	border: 1px solid #4bc6df !important;
+	color: #005689;
+	font-weight: bold;
+}
+
+.grey_bg {
+	background-color: #efefec;
+}
+
+.dark_grey_bg {
+	background-color: #7d7569;
+	color: #fff;
+}
+
+.purp_bg {
+	background-color: #951c55;
+	color: #fff;
+}
+
+.clr76 {
+	color: #767676;
+}
+
+.share_icon {
+	width: 30px;
+	margin: 5px 5px 5px 0;
+}
+
+.sharing_space {
+	margin-right: 5px;
+	margin-left: 5px;
+}
+
+.art_text p{
+	font-size: 1.2em;
+	/*font-weight: bold;*/
+	margin-top: 20px;
+	line-height: 1.5em;
+}
+
+.xs_share_icon {
+	width: 15px;
+}
+
+.shares_txt {
+	font-family: 'MerriweatherSans', sans-serif;
+	font-size: .8em;
+	margin-top: 3px;
+	margin-bottom: 3px;
+	padding: 0;
+}
+
+.nr_shares {
+	margin: 0;
+	padding: 0;
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+.comments_space {
+	padding: 0;
+	color: #005689;
+}
+
+.author {
+	font-size: 1.1em;
+	font-weight: bold;
+	color: #e6711b;
+}
+
+.grey_border, .grey_border_sm {
+	border-right: 1px solid #e5e5e5;
+}
+
+.top_blue_border {
+	border-top: 1px solid #4bc6df;
+}
+
+.top_orng_border {
+	border-top: 1px solid #ffce4b;
+}
+
+.top_pink_border {
+	border-top: 1px solid #fdadba;
+}
+
+.bott_blue_border {
+	border-bottom: 1px solid #4bc6df;
+}
+
+.top_grey_border {
+	border-top: 1px solid #767676;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.bott_grey_border {
+	border-bottom: 1px solid #767676;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.top_lgt_grey_border {
+	border-top: 1px solid #dfdfdf;
+
+}
+
+.bott_lgt_grey_border {
+	border-bottom: 1px solid #dfdfdf;
+
+}
+
+.hide_overflow {
+	overflow: hidden;
+}
+
+article {
+	padding: 0 !important;
+	padding-right: : 10px !important;
+}
+
+section {
+	padding: 0 !important;
+}
+
+.spaced_row {
+	/*margin-top: 15px;*/
+	margin-bottom: 10px;
+}
+
+.text_flex {
+    display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.flex1 {
+	flex: 1;
+}
+
+.more_cont {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.more_btn {
+	font-size: 1.1em;
+	color: #fff;
+	background-color: #005689;
+	border-radius: 15px;
+	border: none;
+	padding: 5px 10px;
+}
+
+.nomargin {
+	margin-bottom: 0;
+}
+
+.foot_toTop {
+	background-color: #005689;
+	padding: 5px 0;
+}
+
+.lwr_foot {
+	background-color: #484848;
+}
+
+.email_sp {
+	padding-left: 0;
+	margin-left: 0;
+}
+
+.email_sp p {
+	font-family: 'MerriweatherSans', sans-serif;
+	font-size: 1.2em;
+}
+
+.copySpace p {
+	font-size: .8em;
+}
+
+label {
+	font-family: 'MerriweatherSans', sans-serif;
+	font-size: 1.2em;
+	font-weight: normal;
+}
+
+.form-control {
+	border-radius: 20px;
+	border: none;
+	font-family: 'MerriweatherSans', sans-serif;
+	font-size: .9em;
+	width: 200px;
+}
+
+.input-group-addon {
+	border-radius: 20px;
+	border: none;
+	background-color: #767676;
+	color: #fff;
+	font-family: 'MerriweatherSans', sans-serif;
+	font-size: .9em;
+	width: 100px;
+}
+
+div[class*='sec_navSpace'] {	/*TARGETS ALL DIVs CONTAINING SPECIFIED STRING*/
+	padding-left: 0;
+	font-family: 'MerriweatherSans', sans-serif;
+	font-size: .95em;
+}
+
+/* STYLNG SECTION FOR NAV TABS */
+
+.nav-tabs > li > a {
+	border-radius: 0;	 /*REMOVES ROUND CORNERS FROM TABS*/
+	font-size: 1.1em;
+	font-weight: bold;
+	border-left: none;
+}
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus
+ {
+	border-left: none;
+	border-right: none;
+	border-top: 3px solid #eaeaea;
+	margin-right: 0;
+}
+
+.nav-tabs > li > a,
+.nav-tabs > li > a:hover,
+.nav-tabs > li > a:focus
+ {
+	border: none;
+	border-top: 3px solid #eaeaea;
+	background-color: #eaeaea;
+	color: unset;
+}
+
+.nav-tabs > li {
+	background-color: #eaeaea; /*CHANGES COLOR OF INACTIVE TAB*/
+
+}
+
+.rem_pad {
+	padding: 0;
+}
+
+.mostviewed_index {
+	font-size: 3em;
+	color: #dfdfdf;
+}
+
+.mostviewed_txt {
+	font-size: 1.1em;
+	font-weight: bold;
+	height: 40px;
+}
+
+.items_sep {
+	margin: 5px 0 5px 0;
+	padding: 0;
+}
+
+.dott_bottm_border {
+	border-bottom: 1px dotted #dfdfdf;
+}
+
+.last_section {
+	margin-bottom: 40px;
+	padding-bottom: 20px;
+}
+
+.copySpace p {
+	font-family: 'MerriweatherSans', sans-serif;
+}
+
+/* ----------------------------------------------------START OF MEDIUM DEVICES DESKTOPS MEDIA QUERY ----------------*/
+
+
+@media only screen and (max-width : 1200px){
+
+.support {
+	display: none;
+}
+
+#sections {
+	display: none;
+}
+
+.header_spacer {
+	border-top: none;
+}
+
+#allStories_cont {
+	display: none;
+}
+
+.more_btn_spacer {
+	display: none;
+}
+
+#reviews_left_col_2 {
+	display: none;
+}
+
+}/*END OF MEDIUM DEVICES M.Q.
+
+/* ----------------------------------------------------START OF SMALL DEVICES MEDIA QUERY ----------------*/
+
+
+@media only screen and (max-width : 991px){
+
+.height_tall {
+	height: unset;
+}
+
+.height_short {
+	height: unset;
+}
+
+.height_xshort {
+	height: unset;
+}
+
+.grey_border {
+	border-right: none;
+}
+
+.art_small {
+	display: flex;
+}
+
+.art_small_img {
+	max-width: 220px;
+	margin: 0;
+}
+
+.art_flex {
+	display: flex;
+	flex-direction: column;
+}
+
+.art_small {
+	display: flex;
+}
+
+article {
+	margin-bottom: 15px;
+}
+
+.tech_row {
+	margin-bottom: unset;
+}
+
+.art_xsmall_sm {
+	height: unset;
+}
+
+.height_med {
+	height: unset;
+}
+
+.navbar_hider {
+	visibility: hidden;
+}
+
+.row_flex {
+    display: flex;
+	justify-content: space-between;
+}
+
+.inter_spacer {
+	display: none;
+}
+
+}/*END OF MEDIUM DEVICES M.Q.
+
+/* ----------------------------------------------------START OF EXTRA SMALL DEVICES MEDIA QUERY ----------------*/
+
+
+@media only screen and (max-width : 767px){
+
+.sublogo {
+	display: none;
+}
+
+#browse {
+	display: none;
+}
+
+#sec_nav {
+	display: none;
+}
+
+.tr_navText {
+	display: none;
+}
+
+#tl_nav > li {
+	margin-left: 5px;
+	margin-right: 0;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.btn-circle {
+	margin-right: 0;
+}
+
+.btn-favicon {
+	margin-right: 0;
+}
+
+#tr_compressed {
+	display: initial;
+}
+
+#guardianLogo {
+	width: 160px;
+}
+
+#logo_space {
+	padding-bottom: 0px;
+	padding-top: 5px;
+}
+
+.glyphicon-home {
+	display: none;
+}
+
+#breadcrumb_top {
+	display: inline-block;
+	position: absolute;
+	width: 130px;
+}
+
+#breadcrumb_wrap {
+	display: none;
+}
+
+.navbar_offset {
+	/*position: relative;*/
+	left: 120px;
+}
+
+.grey_border_sm {
+	border-right: none;
+}
+
+.height_tall_sm {
+	height: unset;
+}
+
+.height_short_sm {
+	height: unset;
+}
+
+.art_small_sm {
+	display: flex;
+}
+
+.art_xsmall {
+	height: unset;
+}
+
+.advert {
+	display: none;
+}
+
+.cond_rem_pad {
+	padding-left: 0; 
+}
+
+}/*END OF XS DEVICES M.Q.
